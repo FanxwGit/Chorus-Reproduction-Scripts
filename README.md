@@ -41,9 +41,9 @@ export PATH=$BLAST_HOME:$PATH
     │   ├── evaluation
     │   └── mmseqs2.sh
     ├── 03.Supplementary-Figure8-Performance-cross-over-point-with-competing-methods
-    │   ├── analize_time_mmseqs2.py
-    │   ├── analyze_time_chorus.py
-    │   └── analyze_time_diamond.py
+    │   ├── chorus.sh
+    │   ├── diamond.sh
+    │   └── mmseqs2.sh
     └── other
         └── drop-cache.sh
 ```
@@ -53,7 +53,7 @@ export PATH=$BLAST_HOME:$PATH
 |-|-|
 |drop-cache.sh|drop the system cache|
 
-### 01.Reproduction-Review2-Result
+### 01.Reproduction-Review-Result
 |File Name|Discription|
 |-|-|
 |blastp.sh|`*.sh` is the script for running the corresponding program.|
@@ -70,5 +70,36 @@ export PATH=$BLAST_HOME:$PATH
 |mmseqs2.sh|`*.sh` is the script for running the corresponding program.|
 |evaluaion|This file is the result of a search analyzed with the evaluate tool of mmseqs-benchmark.|
 
-`*.sh` is the script for running the corresponding program.`
-### 03.
+### 03.Supplementary-Figure8-Performance-cross-over-point-with-competing-methods
+In this part, we use the script to analyze the time of mmseqs2, chorus, and diamond to get the cross-over point.
+
+The database is UniRef90 (Mar 2023 version, size 75G). The sequences in the 
+query set were randomly extracted from UniRef50 (June 2015 version), 
+encompassing a size of 14 GB, with each sequence having a length of 1000 
+amino acids. 
+
+
+|File Name|Discription|
+|-|-|
+|chorus.sh|`*.sh` is the script for running the corresponding program.|
+|diamond.sh|`*.sh` is the script for running the corresponding program.|
+|mmseqs2.sh|`*.sh` is the script for running the corresponding program.|
+|S8_CrossoverPointQuerys.zip||
+
+You can use this command to download the sequences.
+```
+wget https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/download/v1.0/S8_CrossoverPointQuerys.zip
+```
+
+#### 04. Cas-analysis scrips
+
+|File Name|Discription|
+|-|-|
+|crispr_query.zip|This Zip contain the cas-analysis scrips.|
+
+Because the cas-analysis scipts is too large, we put it in this repository's release. You can download it from [here]
+
+or you can use this command to download it.
+```
+wget https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/download/v1.0/crispr_query.zip
+```
