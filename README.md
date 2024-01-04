@@ -94,10 +94,16 @@ tantan -p -x X targetannotation.fasta targetannotation_tantan.fasta
 ### 03.Supplementary-Figure8-Performance-cross-over-point-with-competing-methods
 In this part, we use the script to analyze the time of mmseqs2, chorus, and diamond to get the cross-over point.
 
-The database is UniRef90 (Mar 2023 version, size 75G). The sequences in the 
-querys set were randomly extracted from UniRef50 (June 2015 version), 
-encompassing a size of 14 GB, with each sequence having a length of 1000 
-amino acids. 
+The database is UniRef90 (Mar 2023 version, size 75G). 
+
+The sequences in the querys set were randomly extracted from UniRef50 (June 2015 version), encompassing a size of 14 GB, with each sequence having a length of 1000 amino acids. 
+
+
+You can get the `S8_CrossoverPointQuerys.zip` from this repo's [Release](https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/tag/v1.0)
+or You can use this command to download the sequences.
+```
+wget https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/download/v1.0/S8_CrossoverPointQuerys.zip
+```
 
 
 |File Name|Discription|
@@ -107,17 +113,8 @@ amino acids.
 |mmseqs2.sh|`*.sh` is the script for running the corresponding program.|
 |S8_CrossoverPointQuerys.zip|a sequences randomly extracted|
 
-You can get the `S8_CrossoverPointQuerys.zip` from this repo's [Release](https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/tag/v1.0)
-orYou can use this command to download the sequences.
-```
-wget https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/download/v1.0/S8_CrossoverPointQuerys.zip
-```
 
 ### 04. Cas-analysis scrips
-
-|File Name|Discription|
-|-|-|
-|crispr_query.zip|This Zip contain the cas-analysis scrips.|
 
 Because the cas-analysis scipts is too large, we put it in this repository's release. You can download it from this repo's [Release](https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/tag/v1.0)
 
@@ -153,4 +150,6 @@ after the extraction is completed, the expected folder structure is
 
 
 
-
+|File Name|Discription|
+|-|-|
+|crispr_query.zip|This Zip contain the cas-analysis scrips.|
