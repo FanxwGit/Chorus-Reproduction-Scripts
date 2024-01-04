@@ -127,9 +127,9 @@ wget https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/download/v
 unzip crispr_query.zip
 ```
 
+**More details about Cas-analysis in this notes.md**
+
 after the extraction is completed, the expected folder structure is 
-
-
 ```
 /home/username
 ├── casq-demo.casq
@@ -152,5 +152,5 @@ after the extraction is completed, the expected folder structure is
 `notes.md` is the notes for the cas-analysis
 
 
-**More details in this notes.md**
+
 
