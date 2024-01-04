@@ -28,7 +28,7 @@ export PATH=$BLAST_HOME:$PATH
 **Remember to replace the paths in the XX_HOME variables according to your actual installation locations.**
 ## Scrips
 ```
-├── mmseqs2-benchmark-pub -> /home/wangziyuan/bio/benchmark/mmseqs2-benchmark-pub
+├── mmseqs2-benchmark-pub
 ├── README.md
 └── scrips
     ├── 01.Reproduction-Review2-Result
@@ -44,6 +44,8 @@ export PATH=$BLAST_HOME:$PATH
     │   ├── chorus.sh
     │   ├── diamond.sh
     │   └── mmseqs2.sh
+    ├── 04.Cas-Analysis
+    │   └── get.sh
     └── other
         └── drop-cache.sh
 ```
