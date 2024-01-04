@@ -53,7 +53,7 @@ export PATH=$BLAST_HOME:$PATH
 ├── mmseqs2-benchmark-pub
 ├── README.md
 └── scrips
-    ├── 01.Reproduction-Review2-Result
+    ├── 01.Reproduction-Review1-Result
     │   ├── blastp.sh
     │   ├── chorus.sh
     │   └── mmseqs2.sh
