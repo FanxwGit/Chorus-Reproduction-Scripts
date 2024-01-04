@@ -83,6 +83,7 @@ tantan -p -x X targetannotation.fasta targetannotation_tantan.fasta
 ```
 
 3. Run the script
+
 |File Name|Discription|
 |-|-|
 |blastp.sh|`*.sh` is the script for running the corresponding program.|
