@@ -12,7 +12,7 @@ mkdir -p "${DB}"
 mkdir -p "${RESULT}"
 
 
-sudo sh scrips/0.Other/drop-cache.sh
+sudo sh scrips/other/drop-cache.sh
 # time -p "${CHORUS}/createDB" "${TARGET}" "${DB}/nr" 8
-sudo sh scrips/0.Other/drop-cache.sh
+sudo sh scrips/other/drop-cache.sh
 # time -p "${CHORUS}/query" -q "${QUERY}" -d "${DB}/nr" -o "${RESULT}"/output.m8

@@ -49,13 +49,16 @@ export PATH=$BLAST_HOME:$PATH
     └── other
         └── drop-cache.sh
 ```
-### 0.Other
+### Other
+In the operating system, Page Cache and Slab Cache can accelerate I/O read and write operations.  Due to the acceleration effects of these system caches, there can be inconsistencies in runtimes for the same query and target.  To ensure fairness in our tests, we clear the system's Page Cache and Slab Cache before each search operation.
 
 |File Name|Discription|
 |-|-|
 |drop-cache.sh|drop the system cache|
 
-### 01.Reproduction-Review-Result
+### 01.Reproduction-Review1-Result
+the query is the query.fasta (6370 queries) and targetdb.fasta (30430281 targets) in the mmseqs2-benchmark-pub
+
 |File Name|Discription|
 |-|-|
 |blastp.sh|`*.sh` is the script for running the corresponding program.|
@@ -76,7 +79,7 @@ export PATH=$BLAST_HOME:$PATH
 In this part, we use the script to analyze the time of mmseqs2, chorus, and diamond to get the cross-over point.
 
 The database is UniRef90 (Mar 2023 version, size 75G). The sequences in the 
-query set were randomly extracted from UniRef50 (June 2015 version), 
+querys set were randomly extracted from UniRef50 (June 2015 version), 
 encompassing a size of 14 GB, with each sequence having a length of 1000 
 amino acids. 
 
@@ -86,22 +89,52 @@ amino acids.
 |chorus.sh|`*.sh` is the script for running the corresponding program.|
 |diamond.sh|`*.sh` is the script for running the corresponding program.|
 |mmseqs2.sh|`*.sh` is the script for running the corresponding program.|
-|S8_CrossoverPointQuerys.zip||
+|S8_CrossoverPointQuerys.zip|a sequences randomly extracted|
 
-You can use this command to download the sequences.
+You can get the `S8_CrossoverPointQuerys.zip` from this repo's [Release](https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/tag/v1.0)
+orYou can use this command to download the sequences.
 ```
 wget https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/download/v1.0/S8_CrossoverPointQuerys.zip
 ```
 
-#### 04. Cas-analysis scrips
+### 04. Cas-analysis scrips
 
 |File Name|Discription|
 |-|-|
 |crispr_query.zip|This Zip contain the cas-analysis scrips.|
 
-Because the cas-analysis scipts is too large, we put it in this repository's release. You can download it from [here]
+Because the cas-analysis scipts is too large, we put it in this repository's release. You can download it from this repo's [Release](https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/tag/v1.0)
 
 or you can use this command to download it.
 ```
 wget https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/download/v1.0/crispr_query.zip
+unzip crispr_query.zip
 ```
+
+after the extraction is completed, the expected folder structure is 
+
+
+```
+/home/username
+├── casq-demo.casq
+│   ├── casq-known_CasNuevo
+│   ├── casq.p1
+│   ├── casq.p1.log
+│   ├── casq.p1start
+│   ├── notes
+│   ├── run.initOrf.log
+│   └── run.initOrf.sh
+└── cast-build
+    ├── casq-known_CasNuevo
+    ├── CAST
+    └── cast-knowncas
+└── notes.md
+```
+
+`cast-build` is the program/script folder
+`casq-demo` is the demostration project folder
+`notes.md` is the notes for the cas-analysis
+
+
+**More details in this notes.md**
+

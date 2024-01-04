@@ -15,9 +15,9 @@ RESULT="/data-nvme/wangziyuan/fxw/res/mmseqs2"
 # mkdir -p "${TMP}"
 # mkdir -p "${RESULT}"
 
-sudo sh scrips/0.Other/drop-cache.sh
+sudo sh scrips/other/drop-cache.sh
 time -p "${MMSEQS}" createdb "${TARGET}" "${DB}"/targetDB
-sudo sh scrips/0.Other/drop-cache.sh
+sudo sh scrips/other/drop-cache.sh
 time -p "${MMSEQS}" createdb "${QUERY}" "${DB}"/queryDB
-sudo sh scrips/0.Other/drop-cache.sh
+sudo sh scrips/other/drop-cache.sh
 time -p "${MMSEQS}" search "${DB}"/queryDB "${DB}"/targetDB "${RESULT}"/alnRes.m8 "${TMP}" -s 1

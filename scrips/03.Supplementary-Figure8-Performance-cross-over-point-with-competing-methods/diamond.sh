@@ -82,8 +82,9 @@ rm -rf $REFERENCE
 
 mkdir -p $RESULT
 mkdir -p $REFERENCE
-
+sudo sh scrips/other/drop-cache.sh
 "${DIAMOND}" makedb --in "${TARGET_TANTAN}" --db "${REFERENCE}"
+sudo sh scrips/other/drop-cache.sh
 "${DIAMOND}" blastp --query "${QUERY_TANTAN}"  --db "${REFERENCE}" --out "${RESULT}"/output.m8
 
 # "${EVALUATE}" "$QUERY_TANTAN" "$TARGET_TANTAN" "${RESULT}/output.m8" "${RESULT}/evaluation_roc5.dat" 4000 1 | tee "${RESULT}/evaluation.log"

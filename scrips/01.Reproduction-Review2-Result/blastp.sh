@@ -12,8 +12,7 @@ rm -rf ${DB}
 
 mkdir -p "${RESULT}"
 
-sudo sh scrips/0.Other/drop-cache.sh
+sudo sh scrips/other/drop-cache.sh
 time -p $BLAST/makeblastdb -dbtype prot -in $TARGET -out $DB 2>&1 
-sudo sh scrips/0.Other/drop-cache.sh
-
+sudo sh scrips/other/drop-cache.sh
 time -p $BLAST/blastp -query $QUERY -db $DB -out $RESULT/results_blast_tmp.m8 -num_threads 56 2>&1

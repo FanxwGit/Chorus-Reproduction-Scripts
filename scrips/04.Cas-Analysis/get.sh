@@ -1,1 +1,1 @@
-wget 
+wget https://github.com/FanxwGit/Chorus-Reproduction-Scripts/releases/download/v1.0/crispr_query.zip
