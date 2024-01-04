@@ -3,19 +3,17 @@ This repository is dedicated to the reproduction of the manuscript titled "Rapid
 
 The official source code is at the following [link](https://github.com/Bio-Acc/Chorus)
 
-catalogue
-=================
 
-   * [Chorus-Reproduction-Scripts](#chorus-reproduction-scripts)
-      * [Download Data](#download-data)
-      * [Path](#path)
-      * [Scrips](#scrips)
-         * [Other](#other)
-         * [01.Reproduction-Review1-Result](#01reproduction-review1-result)
-         * [02.Supplementary-Figure9-Reliability-benchmark-with-competing-methods](#02supplementary-figure9-reliability-benchmark-with-competing-methods)
-         * [03.Supplementary-Figure8-Performance-cross-over-point-with-competing-methods](#03supplementary-figure8-performance-cross-over-point-with-competing-methods)
-         * [04. Cas-analysis scrips](#04-cas-analysis-scrips)
-      * [Contact](#contact)
+* [Chorus-Reproduction-Scripts](#chorus-reproduction-scripts)
+    * [Download Data](#download-data)
+    * [Path](#path)
+    * [Scrips](#scrips)
+        * [Other](#other)
+        * [01.Reproduction-Review1-Result](#01reproduction-review1-result)
+        * [02.Supplementary-Figure9-Reliability-benchmark-with-competing-methods](#02supplementary-figure9-reliability-benchmark-with-competing-methods)
+        * [03.Supplementary-Figure8-Performance-cross-over-point-with-competing-methods](#03supplementary-figure8-performance-cross-over-point-with-competing-methods)
+        * [04. Cas-analysis scrips](#04-cas-analysis-scrips)
+    * [Contact](#contact)
 
 ## Download Data
 
