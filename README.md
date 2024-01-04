@@ -26,9 +26,20 @@ wget http://wwwuser.gwdg.de/~compbiol/mmseqs2/mmseqs2-benchmark.tar.gz
 tar -zxvf mmseqs2-benchmark.tar.gz
 ```
 
-## Path
+## Environment
 
-Set the environment variable
+Operating System:  Ubuntu 20.04.5 LTS
+CPU: Xeon E5-2680 v4
+
+
+|Software|Version|
+|-|-|
+|chorus|1.0.0|
+|mmseqs2|45111b641859ed0ddd875b94d6fd1aef1a675b7e|
+|blast|2.12.0|
+
+
+Set the environment variable (optional)
 ```
 export CHORUS_HOME="/home/wangziyuan/bio/Chorus/bin"
 export PATH=$CHORUS_HOME:$PATH
