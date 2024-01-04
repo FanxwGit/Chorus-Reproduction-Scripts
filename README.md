@@ -68,6 +68,21 @@ the query is the query.fasta (6370 queries) and targetdb.fasta (30430281 targets
 
 
 ### 02.Supplementary-Figure9-Reliability-benchmark-with-competing-methods
+
+the query is the query.fasta (6370 queries) in the  mmseqs2-benchmark-pub
+the target is the targetannotation.fasta (3374007 targets)
+
+we use the tantan tool to tantan the targetannotation.fasta
+1. Download and build tantan: https://gitlab.com/mcfrith/tantan
+
+2. Tantan the query and database 
+
+```bash
+tantan -p -x X query.fasta query_tantan.fasta
+tantan -p -x X targetannotation.fasta targetannotation_tantan.fasta
+```
+
+3. Run the script
 |File Name|Discription|
 |-|-|
 |blastp.sh|`*.sh` is the script for running the corresponding program.|
