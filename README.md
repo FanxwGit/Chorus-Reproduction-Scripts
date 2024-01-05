@@ -5,7 +5,7 @@ The official source code is at the following [link](https://github.com/Bio-Acc/C
 
 
 * [Download Data](#download-data)
-* [Path](#path)
+* [Environment](#Environment)
 * [Scrips](#scrips)
     * [Other](#other)
     * [01.Reproduction-Review1-Result](#01reproduction-review1-result)
